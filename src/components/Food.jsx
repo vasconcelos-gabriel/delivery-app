@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { data } from '../data/data.js'
-import FoodDetail from './FoodDetail.jsx'
+import * as Dialog from '@radix-ui/react-dialog'
 
 const Food = () => {
   const [foods, setFoods] = useState(data)
@@ -116,18 +116,45 @@ const Food = () => {
               alt={item.name}
               className="w-full h-[200px] object-cover rounded-t-lg"
             />
-            <div className="flex justify-between px-2 py-4">
-              <p className="font-bold">{item.name}</p>
+            <div className="flex flex-wrap justify-between items-center px-2 py-3">
+              <p className="font-bold w-full flex justify-center">{item.name}</p>
               <p>
-                <span className="bg-rose-600 text-white p-1 rounded-md">
-                  {item.price}
+                <span className="w-1/2 text-black-600 items-center font-semibold text-base">
+                {`R$ ${item.price.toFixed(2)}`}
                 </span>
               </p>
+              <Dialog.Root>
+                <Dialog.Trigger className="w-1/2 rela flex justify-end mt-1 rounded-lg p-1 gap-2 items-center justify-center text-wh font-semibold text-white bottom-0 bg-zinc-900 hover:bg-zinc-700 ">
+                  Detalhes
+                </Dialog.Trigger>
+                <Dialog.Portal>
+                  <Dialog.Overlay className="w-screen h-screen bg-black/80 fixed inset-0" />
+                  <Dialog.Content className="fixed flex items-center justify-center p-10 bg-white rounded-2xl w-full max-w-2xl top-[2%] left-[23%] overflow-hidden shadow-lg">
+                    <div className='max-w-2xl'>
+                      <img
+                        src={item.image}
+                        alt="/"
+                        className="w-full h-[28rem]  object-cover rounded-xl"
+                      />
+                      <div className="px-6 py-4">
+                        <h2 className="font-bold text-xl mb-2">{item.name}</h2>
+                        <p className="text-gray-700 text-base">{item.details}</p>
+                      </div>
+                      
+                      <div className="px-6 pt-4 pb-2">
+                      <span className="text-gray-600 text-base">{`R$ ${item.price.toFixed(2)}`}</span>
+                      </div>
+                      
+                      
+                      
+                    </div>
+                  </Dialog.Content>
+                </Dialog.Portal>
+              </Dialog.Root>
+              
             </div>
           </div>
         ))}
-        {selectedFood && <FoodDetail item={selectedFood} />}
-        
       </div>
     </div>
   )

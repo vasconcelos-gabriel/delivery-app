@@ -5,7 +5,8 @@ export const data = [
       category: 'burger',
       image:
         'https://images.unsplash.com/photo-1607013251379-e6eecfffe234?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1400&q=60',
-      price: '$$$$',
+      price: 50,
+      details: 'Lorem ipsum dolor sit amet. Est deserunt sint eum ipsam cumque rem aliquam culpa. Qui repellat neque quo quos voluptas est molestiae voluptates qui fugiat temporibus ut harum veniam vel aspernatur fugiat vel possimus ullam. ',
     },
     {
       id: 2,
@@ -13,7 +14,8 @@ export const data = [
       category: 'burger',
       image:
         'https://images.unsplash.com/photo-1553979459-d2229ba7433b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGJ1cmdlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=1400&q=60',
-      price: '$',
+      price: 15,
+      details: 'Lorem ipsum dolor sit amet. Est deserunt sint eum ipsam cumque rem aliquam culpa. Qui repellat neque quo quos voluptas est molestiae voluptates qui fugiat temporibus ut harum veniam vel aspernatur fugiat vel possimus ullam. ',
     },
     {
       id: 3,
@@ -21,7 +23,8 @@ export const data = [
       category: 'burger',
       image:
         'https://images.unsplash.com/photo-1608767221051-2b9d18f35a2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJ1cmdlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=1400&q=60',
-      price: '$$',
+      price: 25,
+      details: 'Lorem ipsum dolor sit amet. Est deserunt sint eum ipsam cumque rem aliquam culpa. Qui repellat neque quo quos voluptas est molestiae voluptates qui fugiat temporibus ut harum veniam vel aspernatur fugiat vel possimus ullam. ',
     },
     {
       id: 4,
@@ -29,7 +32,8 @@ export const data = [
       category: 'burger',
       image:
         'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YnVyZ2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1400&q=60',
-      price: '$$$',
+      price: 40,
+      details: 'Lorem ipsum dolor sit amet. Est deserunt sint eum ipsam cumque rem aliquam culpa. Qui repellat neque quo quos voluptas est molestiae voluptates qui fugiat temporibus ut harum veniam vel aspernatur fugiat vel possimus ullam. ',
     },
     {
       id: 5,
@@ -37,15 +41,17 @@ export const data = [
       category: 'pizza',
       image:
         'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6347d51e-c74f-4feb-b624-5888cede632b/202209222207_RVX4_i.jpg',
-      price: '$$',
+      price: 25,
+      details: 'Lorem ipsum dolor sit amet. Est deserunt sint eum ipsam cumque rem aliquam culpa. Qui repellat neque quo quos voluptas est molestiae voluptates qui fugiat temporibus ut harum veniam vel aspernatur fugiat vel possimus ullam. ',
     },
     {
       id: 6,
-      name: 'Calabresa',
+      name: 'Pizza de Calabresa',
       category: 'pizza',
       image:
         'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6347d51e-c74f-4feb-b624-5888cede632b/202108250037_3SW7_i.jpg',
-      price: '$$$',
+      price: 40,
+      details: 'Lorem ipsum dolor sit amet. Est deserunt sint eum ipsam cumque rem aliquam culpa. Qui repellat neque quo quos voluptas est molestiae voluptates qui fugiat temporibus ut harum veniam vel aspernatur fugiat vel possimus ullam. ',
     },
     {
       id: 7,
@@ -53,7 +59,8 @@ export const data = [
       category: 'pizza',
       image:
         'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6347d51e-c74f-4feb-b624-5888cede632b/202209222231_7234_i.jpg',
-      price: '$$$$',
+      price: 50,
+      details: 'Lorem ipsum dolor sit amet. Est deserunt sint eum ipsam cumque rem aliquam culpa. Qui repellat neque quo quos voluptas est molestiae voluptates qui fugiat temporibus ut harum veniam vel aspernatur fugiat vel possimus ullam. ',
     },
     {
       id: 8,
@@ -61,15 +68,17 @@ export const data = [
       category: 'pizza',
       image:
         'https://static.ifood-static.com.br/image/upload/t_medium/pratos/6347d51e-c74f-4feb-b624-5888cede632b/202209240011_E37A_i.jpg',
-      price: '$',
+      price: 15,
+      details: 'Lorem ipsum dolor sit amet. Est deserunt sint eum ipsam cumque rem aliquam culpa. Qui repellat neque quo quos voluptas est molestiae voluptates qui fugiat temporibus ut harum veniam vel aspernatur fugiat vel possimus ullam. ',
     },
     {
       id: 9,
-      name: 'Picanha na Brasa',
+      name: 'Churrasco de Picanha na Brasa',
       category: 'carne',
       image:
         'https://cdn.pixabay.com/photo/2020/06/17/21/54/meat-5311301_960_720.jpg',
-      price: '$$',
+      price: 25,
+      details: 'Lorem ipsum dolor sit amet. Est deserunt sint eum ipsam cumque rem aliquam culpa. Qui repellat neque quo quos voluptas est molestiae voluptates qui fugiat temporibus ut harum veniam vel aspernatur fugiat vel possimus ullam. ',
     },
     {
       id: 10,
@@ -77,7 +86,8 @@ export const data = [
       category: 'carne',
       image:
         'https://cdn.pixabay.com/photo/2016/03/05/20/07/abstract-1238657_1280.jpg',
-      price: '$$$',
+      price: 40,
+      details: 'Lorem ipsum dolor sit amet. Est deserunt sint eum ipsam cumque rem aliquam culpa. Qui repellat neque quo quos voluptas est molestiae voluptates qui fugiat temporibus ut harum veniam vel aspernatur fugiat vel possimus ullam. ',
     },
     {
       id: 11,
@@ -85,7 +95,8 @@ export const data = [
       category: 'carne',
       image:
         'https://espetinhodesucesso.com.br/wp-content/uploads/2016/12/espetinho-de-cora%C3%A7%C3%A3o-de-frango-1200x900.jpg',
-      price: '$$$$',
+      price: 50,
+      details: 'Lorem ipsum dolor sit amet. Est deserunt sint eum ipsam cumque rem aliquam culpa. Qui repellat neque quo quos voluptas est molestiae voluptates qui fugiat temporibus ut harum veniam vel aspernatur fugiat vel possimus ullam. ',
     },
     {
       id: 12,
@@ -93,7 +104,8 @@ export const data = [
       category: 'carne',
       image:
         'https://images.tcdn.com.br/img/img_prod/838935/espeto_de_linguica_toscana_tudo_em_carnes_600g_99009_1_20201211054424.jpg',
-      price: '$',
+      price: 15,
+      details: 'Lorem ipsum dolor sit amet. Est deserunt sint eum ipsam cumque rem aliquam culpa. Qui repellat neque quo quos voluptas est molestiae voluptates qui fugiat temporibus ut harum veniam vel aspernatur fugiat vel possimus ullam. ',
     },
     {
       id: 13,
@@ -101,7 +113,8 @@ export const data = [
       category: 'italiana',
       image:
         'https://static.ifood-static.com.br/image/upload/t_medium/pratos/d247175e-d793-4440-a5c1-fe43f5b3f11f/202303061202_9gdu7yto8ac.png',
-      price: '$$',
+      price: 25,
+      details: 'Lorem ipsum dolor sit amet. Est deserunt sint eum ipsam cumque rem aliquam culpa. Qui repellat neque quo quos voluptas est molestiae voluptates qui fugiat temporibus ut harum veniam vel aspernatur fugiat vel possimus ullam. ',
     },
     {
       id: 14,
@@ -109,7 +122,8 @@ export const data = [
       category: 'italiana',
       image:
         'https://static.ifood-static.com.br/image/upload/t_medium/pratos/d247175e-d793-4440-a5c1-fe43f5b3f11f/202303061202_ub9hby8qb5e.jpg',
-      price: '$$$$',
+      price: 50,
+      details: 'Lorem ipsum dolor sit amet. Est deserunt sint eum ipsam cumque rem aliquam culpa. Qui repellat neque quo quos voluptas est molestiae voluptates qui fugiat temporibus ut harum veniam vel aspernatur fugiat vel possimus ullam. ',
     },
     {
       id: 15,
@@ -117,7 +131,8 @@ export const data = [
       category: 'italiana',
       image:
         'https://static.ifood-static.com.br/image/upload/t_medium/pratos/d247175e-d793-4440-a5c1-fe43f5b3f11f/202303061202_4j5npvthe26.png',
-      price: '$',
+      price: 15,
+      details: 'Lorem ipsum dolor sit amet. Est deserunt sint eum ipsam cumque rem aliquam culpa. Qui repellat neque quo quos voluptas est molestiae voluptates qui fugiat temporibus ut harum veniam vel aspernatur fugiat vel possimus ullam. ',
     },
     {
       id: 16,
@@ -125,15 +140,17 @@ export const data = [
       category: 'italiana',
       image:
         'https://static.ifood-static.com.br/image/upload/t_medium/pratos/d247175e-d793-4440-a5c1-fe43f5b3f11f/202303061202_zf5dj90w4w.jpg',
-      price: '$$$',
+      price: 40,
+      details: 'Lorem ipsum dolor sit amet. Est deserunt sint eum ipsam cumque rem aliquam culpa. Qui repellat neque quo quos voluptas est molestiae voluptates qui fugiat temporibus ut harum veniam vel aspernatur fugiat vel possimus ullam. ',
     },
     {
       id: 17,
-      name: 'Combo Sushi',
+      name: 'Combo 70 peças Sushi',
       category: 'japonesa',
       image:
         'https://static.ifood-static.com.br/image/upload/t_medium/pratos/f9265b53-228c-4ec4-bddb-2dd062c31278/202301131045_16YM_i.jpg',
-      price: '$$$',
+      price: 40,
+      details: 'Lorem ipsum dolor sit amet. Est deserunt sint eum ipsam cumque rem aliquam culpa. Qui repellat neque quo quos voluptas est molestiae voluptates qui fugiat temporibus ut harum veniam vel aspernatur fugiat vel possimus ullam. ',
     },
     {
       id: 18,
@@ -141,7 +158,8 @@ export const data = [
       category: 'japonesa',
       image:
         'https://static.ifood-static.com.br/image/upload/t_medium/pratos/f9265b53-228c-4ec4-bddb-2dd062c31278/202209211556_11TM_i.jpg',
-      price: '$$$',
+      price: 40,
+      details: 'Lorem ipsum dolor sit amet. Est deserunt sint eum ipsam cumque rem aliquam culpa. Qui repellat neque quo quos voluptas est molestiae voluptates qui fugiat temporibus ut harum veniam vel aspernatur fugiat vel possimus ullam. ',
     },
     {
       id: 19,
@@ -149,15 +167,17 @@ export const data = [
       category: 'japonesa',
       image:
         'https://static.ifood-static.com.br/image/upload/t_medium/pratos/f9265b53-228c-4ec4-bddb-2dd062c31278/202108091916_7R72_f.png',
-      price: '$$$',
+      price: 40,
+      details: 'Lorem ipsum dolor sit amet. Est deserunt sint eum ipsam cumque rem aliquam culpa. Qui repellat neque quo quos voluptas est molestiae voluptates qui fugiat temporibus ut harum veniam vel aspernatur fugiat vel possimus ullam. ',
     },
     {
       id: 20,
-      name: 'Harumakis',
+      name: 'Combo 12 Harumakis',
       category: 'japonesa',
       image:
         'https://static.ifood-static.com.br/image/upload/t_medium/pratos/f9265b53-228c-4ec4-bddb-2dd062c31278/202209221248_4K64_i.jpg',
-      price: '$$$',
+      price: 40,
+      details: 'Lorem ipsum dolor sit amet. Est deserunt sint eum ipsam cumque rem aliquam culpa. Qui repellat neque quo quos voluptas est molestiae voluptates qui fugiat temporibus ut harum veniam vel aspernatur fugiat vel possimus ullam. ',
     },
   ];
   
