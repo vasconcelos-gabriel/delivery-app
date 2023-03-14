@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { data } from '../data/data.js'
 import * as Dialog from '@radix-ui/react-dialog'
+import  {X}  from 'phosphor-react'
 
 const Food = () => {
   const [foods, setFoods] = useState(data)
@@ -132,6 +133,9 @@ const Food = () => {
                 <Dialog.Portal>
                   <Dialog.Overlay className="w-screen h-screen bg-black/80 fixed inset-0" />
                   <Dialog.Content className="fixed flex items-center justify-center p-10 bg-white rounded-2xl w-full max-w-xs left-[9%] lg:max-w-2xl top-[2%] lg:left-[23%] overflow-auto lg:overflow-hidden shadow-lg">
+                  <Dialog.Close className='border-none absolute right-1 top-3 text-zinc-400 rounded-lg hover:text-zinc-200 '>
+              <X size={24} aria-label="Fechar" />
+              </Dialog.Close>
                     <div className="flex flex-col items-center justify-center max-w-2xl">
                       <img
                         src={item.image}
