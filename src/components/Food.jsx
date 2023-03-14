@@ -77,28 +77,28 @@ const Food = () => {
           <p className="font-bold text-gray-700">Filtro de preço</p>
           <div className="flex justify-between max-w-[390px] w-full">
             <button
-              onClick={() => filterPrice('$')}
+              onClick={() => filterPrice(15)}
               className="m-1 border-rose-600 text-rose-600 hover:bg-rose-600 hover:text-white"
             >
-              $
+              15.00
             </button>
             <button
-              onClick={() => filterPrice('$$')}
+              onClick={() => filterPrice(25)}
               className="m-1 border-rose-600 text-rose-600 hover:bg-rose-600 hover:text-white"
             >
-              $$
+              25.00
             </button>
             <button
-              onClick={() => filterPrice('$$$')}
+              onClick={() => filterPrice(40)}
               className="m-1 border-rose-600 text-rose-600 hover:bg-rose-600 hover:text-white"
             >
-              $$$
+              40.00
             </button>
             <button
-              onClick={() => filterPrice('$$$$')}
+              onClick={() => filterPrice(50)}
               className="m-1 border-rose-600 text-rose-600 hover:bg-rose-600 hover:text-white"
             >
-              $$$$
+              50.00
             </button>
           </div>
         </div>
@@ -119,22 +119,22 @@ const Food = () => {
             <div className="flex flex-wrap justify-between items-center px-2 py-3">
               <p className="font-bold w-full flex justify-center">{item.name}</p>
               <p>
-                <span className="w-1/2 text-black-600 items-center font-semibold text-base">
+                <span className="w-1/2 mt-4 text-black-600 items-center font-semibold text-base">
                 {`R$ ${item.price.toFixed(2)}`}
                 </span>
               </p>
               <Dialog.Root>
-                <Dialog.Trigger className="w-1/2 rela flex justify-end mt-1 rounded-lg p-1 gap-2 items-center justify-center text-wh font-semibold text-white bottom-0 bg-zinc-900 hover:bg-zinc-700 ">
+                <Dialog.Trigger className="w-1/2 rela flex mt-4 rounded-lg p-1 gap-2 items-center justify-center font-semibold text-white bottom-0 bg-zinc-900 hover:bg-zinc-700 ">
                   Detalhes
                 </Dialog.Trigger>
                 <Dialog.Portal>
                   <Dialog.Overlay className="w-screen h-screen bg-black/80 fixed inset-0" />
-                  <Dialog.Content className="fixed flex items-center justify-center p-10 bg-white rounded-2xl w-full max-w-2xl top-[2%] left-[23%] overflow-hidden shadow-lg">
-                    <div className='max-w-2xl'>
+                  <Dialog.Content className="fixed flex items-center justify-center p-10 bg-white rounded-2xl w-[22rem] h-[20rem] top-[25%] left-[4%] overflow-auto lg:w-full lg:max-w-2xl lg:top-[2%] lg:left-[23%] lg:overflow-hidden shadow-lg">
+                    <div className='flex flex-col items-center justify-center'>
                       <img
                         src={item.image}
                         alt="/"
-                        className="w-full h-[28rem]  object-cover rounded-xl"
+                        className="mt-64 w-auto h-[200px] lg:w-full lg:h-[28rem] rounded-xl"
                       />
                       <div className="px-6 py-4">
                         <h2 className="font-bold text-xl mb-2">{item.name}</h2>
