@@ -117,10 +117,12 @@ const Food = () => {
               className="w-full h-[200px] object-cover rounded-t-lg"
             />
             <div className="flex flex-wrap justify-between items-center px-2 py-3">
-              <p className="font-bold w-full flex justify-center">{item.name}</p>
+              <p className="font-bold w-full flex justify-center">
+                {item.name}
+              </p>
               <p>
                 <span className="w-1/2 mt-4 text-black-600 items-center font-semibold text-base">
-                {`R$ ${item.price.toFixed(2)}`}
+                  {`R$ ${item.price.toFixed(2)}`}
                 </span>
               </p>
               <Dialog.Root>
@@ -129,29 +131,29 @@ const Food = () => {
                 </Dialog.Trigger>
                 <Dialog.Portal>
                   <Dialog.Overlay className="w-screen h-screen bg-black/80 fixed inset-0" />
-                  <Dialog.Content className="fixed flex items-center justify-center p-10 bg-white rounded-2xl w-[22rem] h-[20rem] top-[25%] left-[4%] overflow-auto lg:w-full lg:max-w-2xl lg:top-[2%] lg:left-[23%] lg:overflow-hidden shadow-lg">
-                    <div className='flex flex-col items-center justify-center'>
+                  <Dialog.Content className="fixed flex items-center justify-center p-10 bg-white rounded-2xl w-full max-w-xs left-[9%] lg:max-w-2xl top-[2%] lg:left-[23%] overflow-auto lg:overflow-hidden shadow-lg">
+                    <div className="flex flex-col items-center justify-center max-w-2xl">
                       <img
                         src={item.image}
                         alt="/"
-                        className="mt-64 w-auto h-[200px] lg:w-full lg:h-[28rem] rounded-xl"
+                        className="w-full max-h-[19rem] lg:max-h-[28rem] object-cover rounded-xl"
                       />
                       <div className="px-6 py-4">
                         <h2 className="font-bold text-xl mb-2">{item.name}</h2>
-                        <p className="text-gray-700 text-base">{item.details}</p>
+                        <p className="text-gray-700 text-base">
+                          {item.details}
+                        </p>
                       </div>
-                      
+
                       <div className="px-6 pt-4 pb-2">
-                      <span className="text-gray-600 text-base">{`R$ ${item.price.toFixed(2)}`}</span>
+                        <span className="text-gray-600 text-base">{`R$ ${item.price.toFixed(
+                          2
+                        )}`}</span>
                       </div>
-                      
-                      
-                      
                     </div>
                   </Dialog.Content>
                 </Dialog.Portal>
               </Dialog.Root>
-              
             </div>
           </div>
         ))}
